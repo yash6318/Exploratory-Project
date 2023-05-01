@@ -2,29 +2,29 @@
 This repository contains all the work related to Exploratory Project, which is Detection of Software Vulnerabilities and Defects and model explanation by eXplanable AI (XAI) - SHAP
 
 
-# OVERALL ANALYSIS OF ALL DEFECT/VULNERABILITY DATASETS
+# Overall ANALYSIS of all Defect/Vulnerability Datasets
 
-  #### NASA [`12` - PC1/PC3/PC4/CM1/JM1/...] `Granularity - Function`  `C`
+  #### NASA [`13` - PC1/KC1/MC1/CM1/JM1/...] `Granularity - Function`  `C`
     No Defects favoured by Lower values of features:
-      loc [Total / LOCodeandComment / LOBlank / LOComments] (12)
+      loc [Total / LOCodeandComment / LOBlank / LOComments] (17)
       Operands [Unique_operands / Total_Operands] (7)
       Unique_Operators (5)
-      Percent Comments(4)
+      Percent_Comments(5)
 
     No Defects favoured by Higher values of features:
-      Cyclomatic_Density / Normalized_Cyclmatic_Density (10)
-      Cyclomatic_Complexity (2)
+      Cyclomatic_Density / Normalized_Cyclmatic_Density (9)
+      Maintenance_Severity (4)
+      Parameter_Count (3)
 
   #### SOFTLAB (NASA) [`5` - AR1/AR3/AR4/AR5/AR6] `Granularity - Function`  `C`
     No Defects favoured by Lower values of features:
-      loc [Total_loc / Executable_loc / Comment_Loc ] (9)
+      loc [CodeandComment / Executable_loc / Comment_Loc ] (9)
       unique_operands (3)
       Halstead_Vocabulary(3)
-      Design Complexity(3)
 
     No Defects favoured by Higher values of features:
-      Halstead_Difficulty(3)
-      Normalized_Cyclomatic_Complexity (1)
+      Halstead_Level (2)
+      Formal_Parameters (1)
 
   <!-- #### ReLink [`3` - Apache/Safe/Zxing] `Granularity - File ` `Java`
     No Defects favoured by Lower values of features:
@@ -41,12 +41,12 @@ This repository contains all the work related to Exploratory Project, which is D
 
     for label=0,i.e. no vulnerability -
     low values of the following attributes favoured no vulnerability:
-        CountLineCodeDecl(5)
-        CountSemicolon(3)
+        CountLineCodeDecl (4)
+        CountSemicolon (3)
+        CountLineCodeExe (3)
 
 
     High values of following favoured vulnerability:
         AvgLineCode(4)
-        AltCountLineCode(4)
-        AvgLine(4)
+        AltCountLineCode(2)
 
